@@ -1,118 +1,56 @@
-# eduMate - Learning Analytics Module
+# eduMate Learning Management System
 
-A comprehensive learning analytics module built with React (Vite) and Node.js, featuring time tracking, knowledge gap detection, performance visualization, and academic CV generation.
+A comprehensive learning management platform for tracking educational progress, managing study sessions, and analyzing learning patterns.
 
 ## Features
 
-- **Time Tracking**: Track time spent on each topic (start, end, duration)
-- **Knowledge Gap Detection**: Identify weak areas based on quiz/test scores
-- **Performance Visualization**: View performance through charts
-- **Achievement System**: Earn badges for consistency and performance
-- **CV Generator**: Create exportable academic CVs in PDF or JSON format
+- **Learning Tracks:** Organize and track progress through different learning paths
+- **Time Tracking:** Monitor study sessions and analyze time spent on different topics
+- **Analytics Dashboard:** Visualize learning progress and identify knowledge gaps
+- **Achievements System:** Gamified learning with achievements and milestones
+
+## Live Demo
+
+[View the live application](https://edu-mate-gvr2b482d-sunny-kumars-projects-e58e0ea1.vercel.app)
 
 ## Tech Stack
 
-### Frontend
-- React (Vite)
-- JavaScript
-- React Router for navigation
-- Chart.js for data visualization
-- jsPDF for PDF generation
+- React
+- Firebase
+- Vite
+- Chart.js
+- Express.js (for backend API)
 
-### Backend
-- Node.js
-- Express
-- MongoDB (Mongoose)
-- RESTful API architecture
+## Deployment
 
-## Project Structure
+This project is deployed on Vercel. To deploy your own version:
 
+1. Fork the repository
+2. Connect to Vercel
+3. Deploy from your GitHub repository
+
+## Development
+
+To run locally:
+
+```bash
+# Install dependencies
+npm install
+
+# Run development server
+npm run dev
+
+# Run backend server
+npm run server
+
+# Run both frontend and backend
+npm run dev:all
 ```
-eduMate/
-├── src/                  # Frontend source code
-│   ├── components/       # React components
-│   │   ├── achievements/ # Achievement-related components
-│   │   ├── analytics/    # Analytics and data visualization
-│   │   ├── cv/           # CV generation components
-│   │   └── learning/     # Learning tracking components
-│   ├── pages/            # Page components
-│   ├── services/         # API service modules
-│   ├── context/          # React context providers
-│   └── assets/           # Static assets
-├── server/               # Backend source code
-│   ├── models/           # Mongoose models
-│   ├── controllers/      # Request handlers
-│   ├── routes/           # API routes
-│   └── config/           # Server configuration
-└── public/               # Static public files
-```
-
-## Setup and Installation
-
-### Prerequisites
-- Node.js (v14+)
-- MongoDB
-
-### Installation
-
-1. Clone the repository:
-   ```
-   git clone <repository-url>
-   cd eduMate
-   ```
-
-2. Install dependencies:
-   ```
-   npm install
-   ```
-
-3. Create a `.env` file in the root directory with the following content:
-   ```
-   PORT=5000
-   MONGODB_URI=mongodb://localhost:27017/edumate
-   ```
-
-4. Start the development servers:
-   ```
-   npm run dev:all
-   ```
-
-## Available Scripts
-
-- `npm run dev` - Start the frontend development server
-- `npm run build` - Build the frontend for production
-- `npm run server` - Start the backend server
-- `npm run dev:all` - Start both frontend and backend servers
-
-## API Endpoints
-
-### Learning Time Tracking
-- `POST /api/learning-time/start` - Start a learning session
-- `PUT /api/learning-time/end/:sessionId` - End a learning session
-- `GET /api/learning-time/summary` - Get learning time summary
-- `GET /api/learning-time/logs` - Get detailed learning time logs
-- `GET /api/learning-time/by-topic` - Get time spent by topic
-- `GET /api/learning-time/recent` - Get recent learning sessions
-
-### Knowledge Gaps
-- `GET /api/knowledge-gaps` - Get all knowledge gaps
-- `GET /api/knowledge-gaps/topic/:topicId` - Get gaps for a specific topic
-- `GET /api/knowledge-gaps/:gapId/recommendations` - Get improvement recommendations
-- `PUT /api/knowledge-gaps/:gapId/status` - Update a gap's status
-- `POST /api/knowledge-gaps/analyze` - Analyze a test result
-
-### Achievements
-- `GET /api/achievements` - Get all achievements
-- `GET /api/achievements/recent` - Get recent achievements
-- `GET /api/achievements/streak` - Get streak information
-- `GET /api/achievements/possible` - Get possible achievements
-- `POST /api/achievements/check` - Check for new achievements
-- `PUT /api/achievements/:achievementId/viewed` - Mark as viewed
-
-### CV Generator
-- `GET /api/cv-generator` - Get CV data
-- `PUT /api/cv-generator` - Update CV information
 
 ## License
 
-MIT 
+MIT
+
+## Author
+
+Sunny Kumar 
