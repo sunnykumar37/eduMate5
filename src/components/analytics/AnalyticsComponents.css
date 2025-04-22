@@ -1,0 +1,200 @@
+.analytics-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.analytics-card h2 {
+  margin-bottom: 20px;
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  border-bottom: 1px solid var(--light-grey-color);
+  padding-bottom: 10px;
+}
+
+.analytics-stats {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  min-width: 30%;
+  margin-bottom: 15px;
+}
+
+.stat-label {
+  font-size: 0.85rem;
+  color: var(--grey-color);
+  margin-bottom: 5px;
+}
+
+.stat-value {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--dark-color);
+}
+
+.topic-list {
+  margin-bottom: 20px;
+  flex-grow: 1;
+}
+
+.topic-list h3 {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: var(--dark-color);
+}
+
+.topic-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.topic-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--light-grey-color);
+}
+
+.topic-name {
+  font-weight: 500;
+}
+
+.topic-time {
+  color: var(--primary-color);
+  font-weight: 500;
+}
+
+.chart-container {
+  height: 200px;
+  margin-bottom: 20px;
+  flex-grow: 1;
+}
+
+.gap-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+  flex-grow: 1;
+}
+
+.gap-item {
+  background-color: var(--light-color);
+  border-radius: 6px;
+  padding: 15px;
+}
+
+.gap-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.gap-header h3 {
+  font-size: 1rem;
+  margin: 0;
+}
+
+.gap-score {
+  padding: 3px 8px;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+
+.score-low {
+  background-color: var(--danger-color);
+  color: white;
+}
+
+.score-medium {
+  background-color: var(--warning-color);
+  color: var(--dark-color);
+}
+
+.gap-recommendation {
+  margin-bottom: 10px;
+}
+
+.gap-recommendation h4 {
+  font-size: 0.85rem;
+  color: var(--grey-color);
+  margin-bottom: 5px;
+}
+
+.gap-recommendation p {
+  font-size: 0.9rem;
+}
+
+.progress-bar {
+  height: 8px;
+  background-color: var(--light-grey-color);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background-color: var(--primary-color);
+}
+
+.empty-state {
+  text-align: center;
+  padding: 30px 0;
+  color: var(--grey-color);
+}
+
+.analytics-card .btn-primary {
+  margin-top: auto;
+}
+
+/* Performance Chart Styles */
+.performance-chart-container {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.chart-controls {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 15px;
+}
+
+.chart-type-selector {
+  display: flex;
+  border: 1px solid var(--light-grey-color);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.chart-type-btn {
+  background: none;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  transition: all 0.2s ease;
+  border-right: 1px solid var(--light-grey-color);
+}
+
+.chart-type-btn:last-child {
+  border-right: none;
+}
+
+.chart-type-btn.active {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.chart-wrapper {
+  position: relative;
+  height: 300px;
+  width: 100%;
+} 

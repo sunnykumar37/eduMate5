@@ -1,0 +1,57 @@
+.time-tracker {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.time-tracker-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.time-tracker-header h3 {
+  margin: 0 0 5px 0;
+  color: var(--primary-color);
+}
+
+.topic-name {
+  font-weight: 500;
+  color: var(--dark-color);
+}
+
+.time-display {
+  background-color: var(--dark-color);
+  color: white;
+  padding: 15px 25px;
+  border-radius: 8px;
+  margin: 15px 0;
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.tracker-controls {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.start-btn {
+  background-color: var(--success-color);
+  padding: 12px 25px;
+  font-size: 1rem;
+}
+
+.stop-btn {
+  background-color: var(--danger-color);
+  padding: 12px 25px;
+  font-size: 1rem;
+} 
